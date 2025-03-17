@@ -15,6 +15,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('dashboard.validator')" :active="request()->routeIs('dashboard.validator')">
+                        {{ __('Validator') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('sql.injection')" :active="request()->routeIs('sql.injection')">
+                        {{ __('SQL Injection') }}
+                    </x-nav-link>
                 </div>
             </div>
 
